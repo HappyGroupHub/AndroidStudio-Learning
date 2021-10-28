@@ -1,11 +1,19 @@
 package com.gmail.chiyc88.lib
 
 fun main() {
-    println("你好，我是紀昀辰")
-    println("學號: 409570030")
+    println("PLease enter two numbers")
+    val a = readLine()?.toInt()
+    val b = readLine()?.toInt()
+    if (b != null) {
+        if (a != null) {
+            println(calculate(a, b))
+        }
+    }
+}
+
+fun calculate(a: Int, b: Int): Int {
+    return a + b
 }
 
 
-class HelloWorld {
-
-}
+class HelloWorld
