@@ -3,7 +3,6 @@ package com.gmail.chiyc88.learning
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +49,8 @@ class MainActivity : AppCompatActivity() {
                 enterName_desc.text = "這局是個平手!"
             } else if (rock.isChecked && randomNum == 1
                 || paper.isChecked && randomNum == 2
-                || scissors.isChecked && randomNum == 3) {
+                || scissors.isChecked && randomNum == 3
+            ) {
                 winner.text = "獲勝者: $playerName"
                 enterName_desc.text = "你贏了! 太水了啦"
             } else {
